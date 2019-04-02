@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cleatfix::after{
+	content:"";
+	display: block;
+	clear: :both;
+}
+
+.main-visual{
+    width: 960px;
+	margin: 50px auto;
+}
+
+.list{
+	padding: 20px;
+	list-style: none;
+}
+
+.list:nth-child(odd){
+	background-color: #eee;
+}
+
+main{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.box{
+	width: 30%;
+	height: 200px;
+	background-color: #ffd700;
+	margin-right: 5%;
+	margin-bottom: 40px;
+	float: left;
+}
+
+.box:first-child, .box:last-child, .box:nth-child(5){
+	background-color: #ff8c00;
+}
+
+.box:nth-child(3n){
+	margin-right: 0;
+}
+
+.box:nth-child(7), .box:nth-child(8), .box:nth-child(9){
+	margin-bottom: 50px;
+}
